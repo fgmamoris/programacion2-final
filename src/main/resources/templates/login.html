@@ -1,0 +1,67 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"/>
+        <meta name="generator" content="Jekyll v4.0.1"/>
+        <title>Plataforma BK</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/"/>
+        <!-- Bootstrap core CSS -->
+
+        <link href="../static/css/bootstrap.css"
+              th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" />
+        <!-- Custom styles for this template -->
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+        <link href="../static/css/signin.css"
+              th:href="@{/css/signin.css}" rel="stylesheet" type="text/css">
+
+    </head>
+    <body class="text-center">
+        <form class="form-signin" action="#" th:action = "@{/loginCheck}" th:object ="${usuario}" method="post">
+            <img src="../static/imgs/bk_logo.png" th:src="@{/imgs/bk_logo.png}"  alt="Burger King" width="72" height="72"> 
+                <h1 class="h3 mb-3 font-weight-normal">Bienvenido</h1>
+                <label for="legajo" class="sr-only">Legajo</label>
+                <div th:if="${error == 'vacio'} "class="alert alert-danger" role ="alert">
+                    <span data-feather="alert-circle"> </span>Uno o mas datos son erroneos</div>
+                <input type="number" th:field="*{legajo}" id="legajo" class="form-control" placeholder="Legajo" required autofocus/>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password"  th:field="*{password}" id="password" class="form-control" placeholder="Password" required/>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+                <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+        </form>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="@{https://code.jquery.com/jquery-3.5.1.slim.min.js}" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../static/assets/dist/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js}" ></script>
+    <script th:src="@{//cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js}" ></script>
+    <script th:src="@{/assets/dist/js/dashboard.js}" type="text/javascript"></script>  
+    <script th:src="@{/assets/dist/js/bootstrap.bundle.js}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../static/css/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="../static/assets/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="../static/assets/dist/js/dashboard.js"></script>
+</html>

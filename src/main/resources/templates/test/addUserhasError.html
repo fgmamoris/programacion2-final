@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8"/>
+
+        <title>Backend Ninja - Signin</title>
+
+
+    </head>
+
+    <body>
+        <form action="#" th:action="@{/addUser}" th:object="${personForm}" method="post">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" th:field="*{nombre}" /></td>
+                    <td th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}">Name Error</td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input type="text" th:field="*{apellido}" /></td>
+                    <td th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}">Name Error</td>
+                </tr>
+                <tr>
+                    <td>pass</td>
+                    <td><input type="text" th:field="*{password}" /></td>
+                    <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Name Error</td>
+                </tr>
+                <tr>
+                    <td>Rol:</td>
+                    <td><input type="text" th:field="*{rol}" /></td>
+                    <td th:if="${#fields.hasErrors('rol')}" th:errors="*{rol}">Age Error</td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
