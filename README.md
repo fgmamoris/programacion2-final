@@ -40,6 +40,7 @@ insert into usuarios value ('1', 'ApellidoUsuario', 'legajo', 'NombreUsuario','p
 
 ```
 _Tener en cuenta al momento de ejecutar la ultima sentencia, modificar los datos a necesidad del usuario._ 
+
 _Podría ser:_
 
 ```
@@ -48,7 +49,7 @@ insert into usuarios value ('1', 'Mamoris', '1', 'Federico','1','1');
 
 _Sexto: Opcional, si desea generar más datos para un mejor interacción con el sistema se puede ejecutar las consultas del archivo primer uso que se encuentra en la raíz del proyecto._
 
-_Septimo: Ejecutar la aplicación desde "http://localhost:8080/"
+_Septimo: Ejecutar la aplicación desde "http://localhost:8080/"_
 
 ## Construido con 🛠️
 
@@ -56,16 +57,15 @@ _Para dar cumplimiento a los requisitos solicitados se utilizaron las siguientes
 
 * [Spring](https://spring.io/) - Framework Core - 
 _Se utilizaron las siguientes dependencias pertenecientes a Spring:_
-    * [Spring Boot] (https://docs.spring.io/spring-boot/docs/2.2.8.RELEASE/reference/html/) - Version 2.2.8.BUILD-SNAPSHOT
-    * [Spring Data] (https://spring.io/projects/spring-data) – Dependeia para persistencia de datos
-    * [Spring Web Services] (https://spring.io/projects/spring-ws) - El framework web usado
-* [Thymeleaf](www.thymeleaf.org) - Motor de plantillas web
-* [Maven] (https://maven.apache.org/) - Manejador de dependencias
+    * [Spring Boot](https://docs.spring.io/spring-boot/docs/2.2.8.RELEASE/reference/html/) - Version 2.2.8.BUILD-SNAPSHOT
+    * [Spring Data](https://spring.io/projects/spring-data) – Dependeia para persistencia de datos
+* [Thymeleaf](https:/www.thymeleaf.org) - Motor de plantillas web
+* [Maven](https://maven.apache.org/) - Manejador de dependencias
 * [Hibernate](https://hibernate.org/orm/releases/5.4/) - Framework ORM - Version 5.4.15.Final
 
 
 
 ## Autor ✒️
 
-* **Federico Mamoris** 
+**Federico Mamoris** 
 
