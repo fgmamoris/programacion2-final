@@ -25,10 +25,14 @@ _Para la compilación y ejecución del proyecto se utilizó las siguientes tecno
 ### Instalación 🔧
 
 _Primero: Crear el usuario "userbk" sin contraseña._
+
 _Segundo: Crear la base de datos "dbbk"._
+
 _Tercero: Asignar todos los permisos al usuario creado en el primer punto, para que tenga acceso a la base de datos creada anteriormente._
+
 _Cuarto: Iniciar la aplicación desde el IDE, este proceso creara todas las tablas correspondientes a la BBDD gracias al Framework Hibernate._
-_Quinto: Ejecutar la siguiente sentencia sql a fin de tener el sistema funcional.
+
+_Quinto: Ejecutar la siguiente sentencia sql a fin de tener el sistema funcional._
 
 ```
 insert into estadopedido value ('1','vendido');
